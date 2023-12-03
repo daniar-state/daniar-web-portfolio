@@ -1,5 +1,8 @@
+'use client'
+
 import { projects } from '@/data/projectData'
 import Image from 'next/image'
+import { useEffect, useState } from 'react'
 import { CustomLink } from './CustomLink'
 import { Heading } from './Heading'
 
@@ -14,7 +17,7 @@ export function ProjectSection() {
 				})}
 			</div>
             <div className='mt-10 flex justify-center'>
-                <CustomLink href="https://github.com" linkType='secondary'>Посмотреть все в Github</CustomLink>
+                <CustomLink href="https://github.com/daniar-state?tab=repositories" linkType='secondary'>Посмотреть все в Github</CustomLink>
             </div>
 		</section>
 	)
@@ -37,7 +40,7 @@ function ProjectCard({ project }: IProjectCard) {
 				/>
 			</div>
 			<div className='p-4'>
-				<ul className='flex gap-4 mb-2'>
+				<ul className='flex gap-2 mb-4 flex-wrap'>
 					{project.stacks.map((stack) => {
 						return (
 							<li
