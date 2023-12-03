@@ -6,7 +6,7 @@ export function Footer() {
                     &copy;copyright {new Date().getFullYear()}
                 </p>
                 <p className="text-zinc-500 text-sm">
-                    Design and Developed By: Daniar Jabagin
+                    Дизайн и разработка: Daniar Jabagin
                 </p>
             </div>
         </footer>

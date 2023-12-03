@@ -7,7 +7,7 @@ export function HeroSection() {
 			<div>
 				<p className='text-lg mb-l'>Привет, Я</p>
 				<h1 className='font-title tracking-wider text-3xl sm:text-6xl -ml-0.5'>
-					Fullstack MERN Разработчик
+					Fullstack MERN Developer
 				</h1>
 				<p className='text-zinc-300 mt-2'>
 					Я разрабатываю полноценные веб-приложения с использованием React и
@@ -15,18 +15,18 @@ export function HeroSection() {
 					SQL. Я использую Git для управления версиями и GitHub для хранения
 					кода.
 				</p>
-				<CustomLink href='#project' className='mt-4'>
-					Мои работы
+				<CustomLink href='#projects' className='mt-4'>
+					Посмотреть мои проекты
 				</CustomLink>
 			</div>
 			<div className='hidden md:flex w-full h-full relative overflow-hidden'>
-				<Image
-					src='/vercel.svg'
+				{/* <Image
+					src='/avatar.jpg'
 					alt='profile image'
-					width={600}
-					height={600}
+					width={1920}
+					height={1080}
                     className="object-cover object-top w-full h-full self-end"
-				/>
+				/> */}
                 <div className='absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-zinc-900 to-transparent'></div>
 			</div>
 		</section>

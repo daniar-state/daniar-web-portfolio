@@ -8,15 +8,15 @@ export const navMenuList = [
 		href: '#projects',
 	},
 	{
-		title: 'Скиллы',
+		title: 'Навыки',
 		href: '#skills',
 	},
 	{
-		title: 'Информация',
+		title: 'Контакты',
 		href: '#about',
 	},
 	{
 		title: 'Связаться',
-		href: 'mailto:enflyge@mail.ru',
+		href: 'https://t.me/daniar_state',
 	},
 ]
