@@ -6,5 +6,13 @@ export const projects = [
         image: "/tildasuite.svg",
         sourceCode: "https://github.com/daniar-state/Tilda-Integration-Suite",
         liveAt: "https://github.com/daniar-state/Tilda-Integration-Suite",
-    } 
+    },
+    {
+        title: "Веб-приложение для создания форм",
+        desc: "Веб-приложения для разработки форм которые можно использовать для сбора информации и просмотра аналитики данной формы и предоставленных данных",
+        stacks: ["React", "NextJS", "PostgreSQL", "Prisma"],
+        image: "/pagebuilder.png",
+        sourceCode: "https://github.com/daniar-state/state-form-builder",
+        liveAt: "https://state-form-builder.vercel.app/",
+    }
 ]
