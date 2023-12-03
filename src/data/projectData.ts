@@ -14,5 +14,5 @@ export const projects = [
         image: "/pagebuilder.png",
         sourceCode: "https://github.com/daniar-state/state-form-builder",
         liveAt: "https://state-form-builder.vercel.app/",
-    }
+    },
 ]
