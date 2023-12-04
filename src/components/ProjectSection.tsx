@@ -2,7 +2,6 @@
 
 import { projects } from '@/data/projectData'
 import Image from 'next/image'
-import { useEffect, useState } from 'react'
 import { CustomLink } from './CustomLink'
 import { Heading } from './Heading'
 
@@ -12,13 +11,18 @@ export function ProjectSection() {
 			<Heading title='Проекты' desc='Мои последние работы' />
 
 			<div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
-				{projects.map((project) => {
+				{projects.map(project => {
 					return <ProjectCard key={project.title} project={project} />
 				})}
 			</div>
-            <div className='mt-10 flex justify-center'>
-                <CustomLink href="https://github.com/daniar-state?tab=repositories" linkType='secondary'>Посмотреть все в Github</CustomLink>
-            </div>
+			<div className='mt-10 flex justify-center'>
+				<CustomLink
+					href='https://github.com/daniar-state?tab=repositories'
+					linkType='secondary'
+				>
+					Посмотреть все в Github
+				</CustomLink>
+			</div>
 		</section>
 	)
 }
@@ -41,7 +45,7 @@ function ProjectCard({ project }: IProjectCard) {
 			</div>
 			<div className='p-4 flex flex-col flex-grow'>
 				<ul className='flex gap-2 mb-4 flex-wrap'>
-					{project.stacks.map((stack) => {
+					{project.stacks.map(stack => {
 						return (
 							<li
 								key={stack}
@@ -64,7 +68,6 @@ function ProjectCard({ project }: IProjectCard) {
 						</CustomLink>
 					</div>
 				</div>
-				
 			</div>
 		</div>
 	)

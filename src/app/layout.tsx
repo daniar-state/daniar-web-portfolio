@@ -38,7 +38,9 @@ export default function RootLayout({
 			>
 				<Navigation />
 
-				<main className='max-w-7xl mx-auto px-4 md:px-8 space-y-28'>{children}</main>
+				<main className='max-w-7xl mx-auto px-4 md:px-8 space-y-28'>
+					{children}
+				</main>
 				<Footer />
 			</body>
 		</html>

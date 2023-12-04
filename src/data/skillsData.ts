@@ -1,21 +1,21 @@
-import { 
-	FaReact, 
-	FaAngular, 
-	FaNodeJs, 
-	FaHtml5, 
-	FaAws, 
-	FaGithub, 
-	FaGit, 
-	FaPhp, 
-	FaJoomla,  
+import {
+	FaReact,
+	FaAngular,
+	FaNodeJs,
+	FaHtml5,
+	FaAws,
+	FaGithub,
+	FaGit,
+	FaPhp,
+	FaJoomla,
 } from 'react-icons/fa'
-import { 
-	DiBootstrap, 
-	DiCss3, 
-	DiWordpress, 
-	DiPython, 
-	DiSqllite, 
-	DiMysql, 
+import {
+	DiBootstrap,
+	DiCss3,
+	DiWordpress,
+	DiPython,
+	DiSqllite,
+	DiMysql,
 	DiHeroku,
 	DiCodeigniter,
 	DiDart,
@@ -24,8 +24,8 @@ import {
 	DiLaravel,
 	DiTerminal,
 	DiUnitySmall,
-	DiUbuntu
-} from "react-icons/di"
+	DiUbuntu,
+} from 'react-icons/di'
 import {
 	SiExpress,
 	SiTailwindcss,
@@ -39,7 +39,7 @@ import {
 	SiNetlify,
 	SiVercel,
 	SiDigitalocean,
-	SiDjango
+	SiDjango,
 } from 'react-icons/si'
 
 export const skills = {
@@ -110,7 +110,7 @@ export const skills = {
 			{
 				stack: 'Dart',
 				icon: DiDart,
-			}
+			},
 		],
 	},
 	cms: {
@@ -127,7 +127,7 @@ export const skills = {
 			{
 				stack: 'Django',
 				icon: SiDjango,
-			}
+			},
 		],
 	},
 	database: {

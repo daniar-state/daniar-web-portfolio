@@ -2,7 +2,6 @@
 
 import { navMenuList } from '@/data/navigationData'
 import { CustomLink } from './CustomLink'
-//import { FiMenu } from "react-icons/fi";
 import { CgMenuGridO } from 'react-icons/cg'
 import { cn } from '@/utils/helper'
 import { useEffect, useState } from 'react'
