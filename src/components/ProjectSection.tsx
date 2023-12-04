@@ -29,8 +29,8 @@ interface IProjectCard {
 
 function ProjectCard({ project }: IProjectCard) {
 	return (
-		<div className='bg-zinc-800/50 border border-zinc-800 rounded-lg overflow-hidden'>
-			<div>
+		<div className='bg-zinc-800/50 border border-zinc-800 rounded-lg overflow-hidden flex flex-col h-full'>
+			<div className='flex-shrink-0'>
 				<Image
 					src={project.image}
 					alt={project.title}
@@ -39,7 +39,7 @@ function ProjectCard({ project }: IProjectCard) {
 					className='w-full h-full object-cover'
 				/>
 			</div>
-			<div className='p-4'>
+			<div className='p-4 flex flex-col flex-grow'>
 				<ul className='flex gap-2 mb-4 flex-wrap'>
 					{project.stacks.map((stack) => {
 						return (
@@ -54,14 +54,17 @@ function ProjectCard({ project }: IProjectCard) {
 				</ul>
 				<p className='text-lg font-medium'>{project.title}</p>
 				<p className='text-zinc-400'>{project.desc}</p>
-				<div className='flex gap-4 mt-4'>
-					<CustomLink href={project.sourceCode} linkType='secondary'>
-						Исходный код
-					</CustomLink>
-					<CustomLink href={project.liveAt} linkType='secondary'>
-						Демо
-					</CustomLink>
+				<div className='mt-auto'>
+					<div className='flex gap-4 mt-4'>
+						<CustomLink href={project.sourceCode} linkType='secondary'>
+							Исходный код
+						</CustomLink>
+						<CustomLink href={project.liveAt} linkType='secondary'>
+							Демо
+						</CustomLink>
+					</div>
 				</div>
+				
 			</div>
 		</div>
 	)
