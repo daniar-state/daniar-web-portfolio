@@ -1,6 +1,6 @@
 # My personal portfolio web-site
 
-![image](https://i.postimg.cc/YCgSpcMX/Daniar-state.jpg)
+![image](https://i.postimg.cc/Hk797CXK/Daniar-state.jpg)
 _________
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
