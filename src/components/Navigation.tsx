@@ -18,7 +18,7 @@ export function Navigation() {
 	return (
 		<nav className='py-4 border-b border-zinc-800 shadow-md sticky top-0 z-10 bg-zinc-900/20 backdrop-blur-md'>
 			<div className='max-w-7x1 mx-auto px-4 md:px-8 flex justify-between items-center'>
-				<p>Daniar Jabagin</p>
+				<p className='text-lg'>Daniar Jabagin</p>
 				<div
 					className='md:hidden cursor-pointer'
 					onClick={() => setNavOpen(prevState => !prevState)}
@@ -35,7 +35,7 @@ export function Navigation() {
 						!isNavOpen && 'max-md:hidden'
 					)}
 				>
-					<ul className='flex items-center flex-col md:flex-row gap-6'>
+					<ul className='flex items-center flex-col md:flex-row gap-6 text-lg'>
 						{navMenuList.map(({ title, href }, index) => {
 							const isLastElement = index === navMenuList.length - 1
 							return (

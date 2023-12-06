@@ -33,7 +33,7 @@ export default function RootLayout({
 				className={cn(
 					roboto.className,
 					bebas.variable,
-					'bg-zinc-900 text-zinc-50'
+					'bg-[#121212] text-zinc-50'
 				)}
 			>
 				<Navigation />

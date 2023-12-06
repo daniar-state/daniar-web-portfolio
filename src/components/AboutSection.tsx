@@ -6,10 +6,7 @@ import { CustomLink } from './CustomLink'
 export function AboutSection() {
 	return (
 		<section id='about' className='scroll-mt-28'>
-			<Heading
-				title='Контакты'
-				desc='Небольшое реадми обо мне :)'
-			/>
+			<Heading title='Контакты' desc='Небольшое реадми обо мне :)' />
 
 			<div className='flex gap-4 flex-col md:flex-row items-center'>
 				<div className='h-80 w-80 shrink-0 overflow-hidden rounded-full'>

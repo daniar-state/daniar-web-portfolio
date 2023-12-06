@@ -12,7 +12,7 @@ export function SkillsSection() {
 						<div key={cate.title}>
 							<p className='mb-2'>{cate.title}</p>
 							<ul className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg_grid-cols-6 gap-6'>
-								{cate.stacks.map(({ icon: IconBase, stack }) => {
+								{cate.stacks.map(({ icon: IconBase, stack, reallink }) => {
 									return (
 										<li
 											key={stack}
@@ -20,7 +20,12 @@ export function SkillsSection() {
                                             justify-center rounded-md'
 										>
 											<IconBase className='text-xl shrink-0' />
-											{stack}
+											<a
+												href={reallink}
+												className='text-base text-white hover:text-blue-500 active:text-zinc-400'
+											>
+												{stack}
+											</a>
 										</li>
 									)
 								})}
